@@ -72,7 +72,7 @@ export default class EditTodo extends Component {
                             className="form-control"
                             value={this.state.todo_description}
                             onChange={this.onChangeTodoDescription}
-                        />
+                        required/>
                     </div>
                     <div className="form-group">
                         <label>Responsible: </label>
@@ -80,7 +80,7 @@ export default class EditTodo extends Component {
                             className="form-control"
                             value={this.state.todo_responsible}
                             onChange={this.onChangeTodoResponsible}
-                        />
+                       required />
                     </div>
                     <div className="form-group">
                         <label>Task: </label>
@@ -88,7 +88,7 @@ export default class EditTodo extends Component {
                     </div>
 
                     <div className="form-group">
-                        <input type="submit" value="Update Todo" className="btn btn-primary" />
+                        <input type="submit" value="Update Mentor Details" className="btn btn-primary" />
                     </div>
                 </form>
             </div>

@@ -62,7 +62,7 @@ export default class CreateTodo extends Component {
     render() {
         return (
             <div style={{ marginTop: 20 }}>
-                <h3>Create New Todo</h3>
+                <h3>Create New Mentor</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Description: </label>
@@ -70,7 +70,7 @@ export default class CreateTodo extends Component {
                             className="form-control"
                             value={this.state.todo_description}
                             onChange={this.onChangeTodoDescription}
-                        />
+                        required/>
 
                     </div>
                     <div className="form-group">
@@ -79,7 +79,7 @@ export default class CreateTodo extends Component {
                             className="form-control"
                             value={this.state.todo_responsible}
                             onChange={this.onChangeTodoResponsible}
-                        />
+                        required/>
 
                     </div>
                     <div className="form-group">
@@ -87,7 +87,7 @@ export default class CreateTodo extends Component {
                         <TaskHolder tasks={this.state.todo_tasks} updateTasks={this.updateTasks} />
                     </div>
                     <div className="form-group">
-                        <input type="submit" value="Create Todo" className="btn btn-primary" />
+                        <input type="submit" value="Create Mentor" className="btn btn-primary" />
                     </div>
                 </form>
             </div>

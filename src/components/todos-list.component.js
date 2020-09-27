@@ -74,7 +74,7 @@ export default class TodosList extends Component {
         console.log("Todos-> ", this.state.todos)
         return (
             <div>
-                <h3>Todos List</h3>
+                <h3>Mentors List</h3>
                 <table className="table table-striped" style={{ marginTop: 20 }}>
                     <thead>
                         <tr>
