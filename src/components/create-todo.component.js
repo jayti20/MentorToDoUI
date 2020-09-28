@@ -48,8 +48,8 @@ export default class CreateTodo extends Component {
         var config = {
             headers: { 'Access-Control-Allow-Origin': '*' }
         };
-        axios.post('https://todo-backend-akash.herokuapp.com/todos/add', newTodo, config)
-            .then(res => console.log(res.data));
+        axios.post('https://mentortodo.herokuapp.com/todos/add', newTodo, config)
+        .then(res => console.log(res.data));
 
         this.setState({
             todo_description: '',
