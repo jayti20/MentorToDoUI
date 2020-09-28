@@ -48,10 +48,10 @@ export default class TodosList extends Component {
             .catch(err => console.log(err));
     }
 
-    componentDidUpdate() {
+    componentDidUpdate(prevProps,prevState) {
         axios.get('https://mentortodo.herokuapp.com/todos')
             .then(res => {
-                if (JSON.stringify(this.state.todos) !== JSON.stringify(res.data)) {
+                if (JSON.stringify(prevState.todos) !== JSON.stringify(res.data)) {
                     this.setState({
                         todos: res.data
                     })
