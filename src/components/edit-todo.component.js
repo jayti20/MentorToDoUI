@@ -64,7 +64,7 @@ export default class EditTodo extends Component {
     render() {
         return (
             <div>
-                <h3>Update Todo</h3>
+                <h3>Update Mentor Detail</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Description: </label>
